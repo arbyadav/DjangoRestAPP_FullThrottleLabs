@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> DJANGO REST API </title>
+    <img src="{% static 'images/logo.png' %} " width="68" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+    <script src='{% static "js/jquery-2.2.3.min.js" %}'></script>
+    <script src='{% static "js/ajax.js" %}'></script>
+</head>
+
+<body background="{% static 'images/bg.jpg' %}">
+    <div id='page'>
+
+        <h1 id='title' text-align="center">
+            {% block title %} &emsp;&emsp;&emsp;Django REST API -
+            FullThrottle
+            Labs{% endblock %}
+        </h1>
+
+        <div id='sidebar'>
+            {% block sidebar %}
+            <ul>
+                <li><a href='/api/users_list/'> API (For Admin Ref.)</a></li>
+                <br>
+                <li><a href="/admin/">Admin </a></li>
+            </ul>
+            {% endblock %}
+        </div>
+
+        <div id='content'>
+            {% block content %}
+            <p style="text-align: left; font-style: italic; font-size:large">
+
+                <h1 style="text-align: left; font-style: italic">&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repositories
+                </h1>
+            </p>
+
+            <br>
+            <ul>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <img src="{% static 'images/github.png' %} " width="50" height="35">&nbsp;&nbsp;&nbsp;
+                <a href='https://github.com/arbyadav/DjangoRestAPP_FullThrottleLabs.git'><b> GITHUB</b></a>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <img src="{% static 'images/heroku.png' %} " width="40" height="28">&nbsp;&nbsp;&nbsp;
+                <a href="https://djanorestapi-fullthrottlelabs.herokuapp.com/"><b>HEROKU </b></a>
+                <br>
+                <br>
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <img src="{% static 'images/aws.png' %} " width="50" height="25">&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://awsdjangorestapi-prod.eba-pemhpunp.ap-south-1.elasticbeanstalk.com/"><b>AWS </b></a>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+                <img src="{% static 'images/readme.jpg' %} " width="45" height="30">&nbsp;&nbsp;&nbsp;
+                <a href="{% static './API Documentation.docx' %}"><b>PROJECT DOCUMENTATION</b></a>
+                &nbsp;&nbsp;&nbsp;
+                <br>
+                <br>
+
+                <p style="text-align: left; font-style: italic; font-size:large">
+                    <h1 style="text-align: left; font-style: italic">&nbsp;&nbsp;&nbsp;&emsp;&nbsp;Resume <h1>
+                </p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+                <img src="{% static 'images/resume.png' %} " width=28" height="28">&nbsp;&nbsp;
+                <a href="{% static './ResumeAmitY.pdf' %}">Amit Yadav</a>
+
+                &nbsp;&nbsp;&nbsp;
+                <p style="text-align: left; font-style: italic; font-size:large">
+                    <h4 style="text-align: left; font-style: italic">&nbsp;
+                        <h4>
+                </p>
+
+                <footer>
+                    <p>Email : <a
+                            href="https://www.google.com/intl/en-GB/gmail/about/#">arbyadav@gmail.com</a>&nbsp;&nbsp; |
+                        &nbsp;&nbsp;Mobile :
+                        +91-9021853340 ( WhatsApp )
+                        &nbsp;&nbsp;|&nbsp;&nbsp; GitHub:
+                        github.com/arbyadav &nbsp;&nbsp;|&nbsp;&nbsp; LinkedIn : linkedin.com/in/arbyadav</p>
+                </footer>
+
+
+            </ul>
+
+
+
+
+
+
+
+            {% endblock %}
+        </div>
+
+    </div>
+</body>
+
+</html>

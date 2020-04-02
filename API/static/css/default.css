@@ -1,0 +1,30 @@
+body{
+    text-align:center;
+}        
+
+#title{
+    font: 150;
+    text-align: center;
+    font-style: oblique;
+}
+
+#page{
+    width: 1300px;
+    text-align: left;
+    margin: 10px auto 200px auto;
+
+}
+
+#sidebar{
+    float: left;
+    width: 200px;
+    border:1.3px solid rgb(163, 28, 28);
+}
+
+#content{
+    float: left;
+    width: 84%;
+    height: 5%;
+    border:1.3px solid rgb(163, 28, 28);
+    
+}
